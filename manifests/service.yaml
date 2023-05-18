@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: testbug2
+  namespace: namespace-workflow-1684376155352
+spec:
+  type: LoadBalancer
+  selector:
+    app: testbug2
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
